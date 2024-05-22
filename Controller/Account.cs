@@ -73,6 +73,7 @@ public class Account : ControllerBase
                 Active = false,
                 Status = StatusEnum.Pendente,
                 Create = DateTime.Now
+                
             };
             await _context.Usuarios.AddAsync(cadastro);
             await _context.SaveChangesAsync();
